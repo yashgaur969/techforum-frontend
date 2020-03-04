@@ -26,12 +26,13 @@ export default class Dashboard extends React.Component{
         
         return (
             
-            <div>
-               
-            <ul>
-                {this.state.cardData.map((s:any) => <div><hr/><h1><strong>{s.question}</strong>
-                     </h1><h1><strong>{s.answer}</strong></h1></div>)}
-            </ul>
+            <div className="dashboard-class">
+                <div className="one-card">
+                <ul className="list-class">
+                    {this.state.cardData.map((s: any) => <div><hr /><h1><strong>{s.question}</strong>
+                    </h1><div>{s.answer}</div><hr /></div>)}
+                </ul>
+                </div>
             </div>
             
     

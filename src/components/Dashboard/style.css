@@ -1,0 +1,16 @@
+.list-class{
+    width: 1fr;
+}
+.dashboard-class{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+    width: 102em;
+    border: 5px solid black;
+    padding: 50px;
+    margin: 20px;
+}
+.list-class{
+    background-color: white;
+    width: 100em;
+}

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
 export const LogIn: React.FC = () => {
@@ -27,9 +27,16 @@ export const LogIn: React.FC = () => {
             body:JSON.stringify(data),
             headers : { 'Content-Type': 'application/json' } 
          }).then(res => res.json())
+         .then(res => {
+            localStorage.setItem('value', res.access_token)
+            window.location.reload(false)
+        })
          .catch(error => console.error('Error:', error))
          .then(response => console.log('Success:', response)); 
     }
+    const historyelement = useHistory()
+            if(localStorage.length>0)
+            historyelement.push('/home')
 
     return(
         <form onSubmit={getdata}>

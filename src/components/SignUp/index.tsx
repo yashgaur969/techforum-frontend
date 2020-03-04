@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './style.css';
 import { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useHistory, Redirect} from 'react-router-dom'
 
 
 export const SignUp: React.FC= () => {
@@ -33,18 +33,26 @@ const postdata = (event: any)=>{
            let second = lastname;
            let email = emailId;
            let pass = password;
+           console.log("firstname",first)
            const data = {first_name:first, last_name:second, email_id:email, password:pass}
            fetch("http://127.0.0.1:5000/users/signup", {
                method: 'POST',
                body:JSON.stringify(data),
                headers : { 'Content-Type': 'application/json' } 
-            }).then(res => console.log(res))
+            }).then(res => res.json())
+            .then(res => {
+               localStorage.setItem('value', res.access_token)
+               window.location.reload(false)
+           })
             .catch(error => console.error('Error:', error))
             .then(response => console.log('Success:', response)); 
-
-            
+          
             
        }
+       const historyelement = useHistory()
+            if(localStorage.length>0)
+            historyelement.push('/home')
+            
 
 
    return (
