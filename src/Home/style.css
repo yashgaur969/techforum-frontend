@@ -1,0 +1,24 @@
+.description{
+    width: 50em;
+    height: 20em;
+}
+.title{
+    width: 50em;
+    height: 10px;
+}
+.button-class{
+    color: black;
+}
+.home-container{
+    display: block;
+    text-align: center;
+    padding: 10em;
+}
+.header-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.search-bar{
+    width: 100em;
+}
