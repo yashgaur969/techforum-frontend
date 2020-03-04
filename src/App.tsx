@@ -6,6 +6,8 @@ import { SignUp } from './components/SignUp';
 import { LogIn } from './components/LogIn';
 import Dashboard from './components/Dashboard';
 import { Home } from './Home';
+import { Notifications } from './components/Notifications';
+import { Profile } from './components/Profile';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
        <Route exact={true} path="/login" component={LogIn} />
        <Route exact={true} path="/dashboard" component={Dashboard} />
        <Route exact={true} path="/home" component={Home} />
+       <Route exact={true} path="/notifications" component={Notifications} />
+       <Route exact={true} path="/profile" component={Profile} />
      </switch>
      </BrowserRouter>
   );

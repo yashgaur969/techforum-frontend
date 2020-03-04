@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
+import { Navigator } from '../components/Navigator';
 
 export const Home: React.FC= () => {
     const [posttitle, setPostTitle] = React.useState('');
@@ -29,12 +30,14 @@ export const Home: React.FC= () => {
          
     }
     return (
-        <div>
+        <div className="main-home">
             <div className="header-class">
                 <div><p>Logo</p></div>
                 <div className="search-bar"><input type="text" placeholder="search" name="search-bar"/></div>
                 <div className="links"><Link to="/login">Login</Link> or <Link to="/">SignUp</Link></div>
             </div>
+        <div className="second-row">
+            <div><Navigator /></div>
         <form onSubmit={postdata}>
         <div className="home-container">
             <div className="post-title"><input type="text" placeholder="Enter Post Title" value={posttitle} onChange={onPostTitleChange} name="posttitle" id="first" className="title"/><br></br></div>
@@ -42,6 +45,7 @@ export const Home: React.FC= () => {
                <div><button type="submit" className="button-class" value="next">Next</button></div>
         </div>
         </form>
+        </div>
         </div>
     );
 }
