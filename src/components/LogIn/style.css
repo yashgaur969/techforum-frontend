@@ -2,7 +2,9 @@
     display: inline-block;
 }
 .container{
-    padding: 400px;
+    /* padding: 400px; */
+    padding-left: 40em;
+    padding-top: 20em;
 }
 input{
     padding: 10px;

@@ -28,10 +28,10 @@ export default class Dashboard extends React.Component{
             
             <div className="dashboard-class">
                 <div className="one-card">
-                <ul className="list-class">
-                    {this.state.cardData.map((s: any) => <div><hr /><h1><strong>{s.question}</strong>
-                    </h1><div>{s.answer}</div><hr /></div>)}
-                </ul>
+                <div className="list-class">
+                    {this.state.cardData.map((s: any) => <div className="single-card"><h1><strong>{s.question}</strong>
+                    </h1>{s.answer}</div>)}
+                </div>
                 </div>
             </div>
             

@@ -12,6 +12,7 @@ export const Home: React.FC= () => {
     const onPostDescriptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPostDescription(event.target.value);
     };
+
     const postdata = (event: any)=>{
         event.preventDefault();
         console.log('error')
@@ -25,16 +26,20 @@ export const Home: React.FC= () => {
          }).then(res => console.log(res))
          .catch(error => console.error('Error:', error))
          .then(response => console.log('Success:', response)); 
-
-         
-         
+}
+    
+    const onLogout = (event:any)=>{
+        localStorage.clear()
+    
     }
+
     return (
         <div className="main-home">
             <div className="header-class">
                 <div><p>Logo</p></div>
                 <div className="search-bar"><input type="text" placeholder="search" name="search-bar"/></div>
                 <div className="links"><Link to="/login">Login</Link> or <Link to="/">SignUp</Link></div>
+                <div className="logout-btn"><button type="submit" value="next" onClick={onLogout}><Link to="/login">logout</Link></button></div>
             </div>
         <div className="second-row">
             <div><Navigator /></div>

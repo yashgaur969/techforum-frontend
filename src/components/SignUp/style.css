@@ -2,9 +2,11 @@
 .form{
     display: inline-block;
 }
-.container{
+.signup-container{
     
     background-color: whitesmoke;
+    padding-left: 40em;
+    padding-top: 10em;
 }
 .button-class {
     background-color: gainsboro;

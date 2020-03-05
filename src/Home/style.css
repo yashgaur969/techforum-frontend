@@ -22,6 +22,7 @@
 .search-bar{
     width: 100em;
 }
-/* .main-home{
+.second-row{
     display: flex;
-} */
+    flex-direction: row;
+}
