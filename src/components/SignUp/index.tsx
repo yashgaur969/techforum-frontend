@@ -96,5 +96,3 @@ const postdata = (event: any)=>{
        
    );
 };
-{/* <input type="submit" className="button-class" value="Next" /> */}
-

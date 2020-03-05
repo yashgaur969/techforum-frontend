@@ -1,0 +1,9 @@
+.header-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+

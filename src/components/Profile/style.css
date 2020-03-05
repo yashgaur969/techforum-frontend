@@ -1,0 +1,27 @@
+.profile-second-row{
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+}
+
+.color-background{
+    background-color: orange;
+    height: 23em;
+}
+.userpost-image{
+    display: flex;
+    flex-direction: column;
+    
+}
+.userpost-details{
+    display: flex;
+    flex-direction: row;
+}
+.user-details-aside{
+    border: 1px solid;
+    /* padding: 10px; */
+    /* padding-bottom: 1em; */
+    padding-right: 2em;
+    margin: 0.8em; 
+    height: 10em;
+    box-shadow: 5px 10px 8px #888888;
+}

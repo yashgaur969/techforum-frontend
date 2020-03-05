@@ -1,23 +1,23 @@
-.list-class{
+.listt-class{
     width: 1fr;
 }
-.dashboard-class{
+.dashboardd-class{
     display: grid;
     grid-template-columns: auto;
-    background-color: lightgray;
+    background-color: white;
     width: 72em;
-    border: 1px solid black;
+    border: 5px solid black;
     padding: 50px;
-     margin: 20px; 
+    margin: 20px;
 }
 .list-class{
     background-color: white;
     width: 70em;
 }
-.single-card{
+/* .onee-card{
     border: 1px solid;
     padding: 10px;
-     padding-bottom: 1em; 
-     margin-bottom: 0.8em;
+    padding-bottom: 1em;
+    margin: 0.8em;
     box-shadow: 5px 10px 8px #888888;
-}
+} */

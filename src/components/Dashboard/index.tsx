@@ -15,7 +15,7 @@ export default class Dashboard extends React.Component{
         axios.get("http://127.0.0.1:5000/dashboard")
         .then(res => {
             const cardData = res.data;
-            // console.log(societyData)
+            console.log(cardData)
             this.setState({cardData:cardData.data});
         });
     }
@@ -29,7 +29,7 @@ export default class Dashboard extends React.Component{
             <div className="dashboard-class">
                 <div className="one-card">
                 <div className="list-class">
-                    {this.state.cardData.map((s: any) => <div className="single-card"><h1><strong>{s.question}</strong>
+                    {this.state.cardData.map((s: any) => <div className="single-card"><strong>{s.first_name}</strong><h1><strong>{s.question}</strong>
                     </h1>{s.answer}</div>)}
                 </div>
                 </div>

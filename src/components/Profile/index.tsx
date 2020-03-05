@@ -1,13 +1,28 @@
 import * as React from 'react';
 import './style.css';
+
 import { Link } from 'react-router-dom';
+import { Header } from '../Header';
+import { Navigator } from '../Navigator';
+import UserInfo from '../UserInfo';
+import Dashboard from '../Dashboard';
+import UserPost from '../../UserPost';
+
 
 export const Profile: React.FC= () => {
     return (
-        <div>
-            <Link to="/Home">Home</Link><br></br>
-            <Link to="/notifications">Notifications</Link><br></br>
-            <Link to="/profile">Profile</Link>
+        <div className="profile-container">
+            <div><Header /></div>
+            <div className="profile-second-row">
+                <div><Navigator /></div>
+                <div className="userpost-image">
+                    <div className="color-background"></div>
+                    <div className="userpost-details">
+                        <div><UserPost /></div>
+                        <div className="user-details-aside"><UserInfo /></div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

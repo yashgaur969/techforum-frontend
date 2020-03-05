@@ -2,6 +2,8 @@ import * as React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 import { Navigator } from '../components/Navigator';
+import Dashboard from '../components/Dashboard';
+import { Header } from '../components/Header';
 
 export const Home: React.FC= () => {
     const [posttitle, setPostTitle] = React.useState('');
@@ -18,7 +20,8 @@ export const Home: React.FC= () => {
         console.log('error')
         let title = posttitle;
         let description = postdescription;
-        const data = {question:title, answer:description}
+        let first_name = localStorage.getItem('first_name')
+        const data = {question:title, answer:description, first_name:first_name}
         fetch("http://127.0.0.1:5000/dashboard", {
             method: 'POST',
             body:JSON.stringify(data),
@@ -27,30 +30,25 @@ export const Home: React.FC= () => {
          .catch(error => console.error('Error:', error))
          .then(response => console.log('Success:', response)); 
 }
-    
-    const onLogout = (event:any)=>{
-        localStorage.clear()
-    
-    }
 
     return (
         <div className="main-home">
-            <div className="header-class">
-                <div><p>Logo</p></div>
-                <div className="search-bar"><input type="text" placeholder="search" name="search-bar"/></div>
-                <div className="links"><Link to="/login">Login</Link> or <Link to="/">SignUp</Link></div>
-                <div className="logout-btn"><button type="submit" value="next" onClick={onLogout}><Link to="/login">logout</Link></button></div>
+            <div className="header"><Header /></div>
+            <div className="second-row">
+                <div><Navigator /></div>
+                <div className="form-post">
+                <form onSubmit={postdata}>
+                    <div className="home-container">
+                        <div className="post-title"><input type="text" placeholder="Enter Post Title" value={posttitle} onChange={onPostTitleChange} name="posttitle" id="first" className="title" /><br></br></div>
+                        <div className="post-description"><input type="text" placeholder="Enter Post Description" value={postdescription} onChange={onPostDescriptionChange} name="postdescription" id="second" className="description" /><br></br></div>
+                        <div><button type="submit" className="button-class" value="next">POST</button></div>
+                    </div>
+                </form>
+                <div>
+                    <Dashboard />
+                </div>
+                </div>
             </div>
-        <div className="second-row">
-            <div><Navigator /></div>
-        <form onSubmit={postdata}>
-        <div className="home-container">
-            <div className="post-title"><input type="text" placeholder="Enter Post Title" value={posttitle} onChange={onPostTitleChange} name="posttitle" id="first" className="title"/><br></br></div>
-               <div className="post-description"><input type="text" placeholder="Enter Post Description" value={postdescription} onChange={onPostDescriptionChange} name="postdescription" id="second" className="description" /><br></br></div>
-               <div><button type="submit" className="button-class" value="next">Next</button></div>
-        </div>
-        </form>
-        </div>
         </div>
     );
 }
