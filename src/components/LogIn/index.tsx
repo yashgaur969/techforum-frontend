@@ -56,6 +56,7 @@ export const LogIn: React.FC = () => {
                    <p> Sign Up instead <Link to="/signup">Sign Up</Link></p>
                </div>
                </div>
+               
             </div>
             
         </form>
