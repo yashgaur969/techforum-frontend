@@ -2,7 +2,6 @@ import * as React from 'react';
 import './style.css';
 import axios from 'axios';
 
-import { Link } from 'react-router-dom';
 
 
 export default class UserPost extends React.Component{
@@ -31,7 +30,7 @@ export default class UserPost extends React.Component{
                  <div className="simple-text"><p>Recently Asked</p></div>
                 <div className="onee-card">
                 <div className="listt-class">
-             {this.state.currData.map((s: any) => <div className="single-card"><strong>{s.first_name}</strong><br></br><h1><strong>{s.question}</strong></h1><br></br>{s.answer}</div>)}
+        {this.state.currData.map((s: any) => <div className="single-card"><strong>{s.first_name} {s.last_name}</strong><br></br><h1><div className="question"><strong>{s.question}</strong></div></h1><br></br>{s.answer}</div>)}
                 </div>
                 </div>
             </div>

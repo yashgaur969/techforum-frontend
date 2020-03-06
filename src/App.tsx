@@ -24,7 +24,7 @@ function App() {
        <Route exact={true} path="/notifications" component={Notifications} />
        <Route exact={true} path="/profile" component={Profile} />
        <Route exact={true} path="/userinfo" component={UserInfo} />
-       <Route exact={true} path="/" component={UserPost} />
+       <Route exact={true} path="/userpost" component={UserPost} />
        <Route exact={true} path="/" component={Initial} />
      </switch>
      </BrowserRouter>
