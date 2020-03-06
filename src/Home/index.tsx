@@ -3,6 +3,7 @@ import './style.css';
 import { Navigator } from '../components/Navigator';
 import Dashboard from '../components/Dashboard';
 import { Header } from '../components/Header';
+import Popular from '../components/Popular';
 
 export const Home: React.FC= () => {
     const [posttitle, setPostTitle] = React.useState('');
@@ -36,16 +37,19 @@ export const Home: React.FC= () => {
             <div className="second-row">
                 <div><Navigator /></div>
                 <div className="form-post">
-                <form onSubmit={postdata}>
-                    <div className="home-container">
-                        <div className="post-title"><input type="text" placeholder="Enter Post Title" value={posttitle} onChange={onPostTitleChange} name="posttitle" id="first" className="title" /><br></br></div>
-                        <div className="post-description"><input type="text" placeholder="Enter Post Description" value={postdescription} onChange={onPostDescriptionChange} name="postdescription" id="second" className="description" /><br></br></div>
-                        <div><button type="submit" className="button-class" value="next">POST</button></div>
+                    <div className="question-post">
+                    <form onSubmit={postdata}>
+                        <div className="home-container">
+                            <div className="post-title"><input type="text" placeholder="Enter Post Title" value={posttitle} onChange={onPostTitleChange} name="posttitle" id="first" className="title" /><br></br></div>
+                            <div className="post-description"><input type="text" placeholder="Enter Post Description" value={postdescription} onChange={onPostDescriptionChange} name="postdescription" id="second" className="description" /><br></br></div>
+                            <div><button type="submit" className="button-class" value="next">POST</button></div>
+                        </div>
+                    </form>
+                    <div className="popular-question"><p><b>Popular Questions</b></p><div><Popular /></div></div>
                     </div>
-                </form>
-                <div>
-                    <Dashboard />
-                </div>
+                    <div>
+                        <Dashboard />
+                    </div>
                 </div>
             </div>
         </div>

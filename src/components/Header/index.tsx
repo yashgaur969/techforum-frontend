@@ -13,7 +13,7 @@ export const Header: React.FC= () => {
                 <div><p>StarkTech</p></div>
                 <div className="search-bar"><input type="text" placeholder="search" name="search-bar"/></div>
                 {/* <div className="links"><Link to="/login">Login</Link> or <Link to="/">SignUp</Link></div> */}
-                <div className="logout-btn"><button type="submit" value="next" onClick={onLogout}><Link to="/login">logout</Link></button></div>
+                <div className="logout-btn"><button type="submit" value="next" onClick={onLogout}><Link to="/">logout</Link></button></div>
             </div>
     )
 }

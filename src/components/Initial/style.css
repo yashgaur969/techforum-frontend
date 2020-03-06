@@ -8,7 +8,8 @@
 
 .popular-question{
     border: 1px solid;
-    padding-right: 20em;
+    padding-right: 8em;
+    padding-left: 1em;
     margin: 1.8em; 
     height: 20em;
     box-shadow: 5px 10px 8px #888888;

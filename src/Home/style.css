@@ -34,3 +34,17 @@
 .button-class{
     background-color: blue;
 }
+.question-post{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    flex-direction: column;
+}
+.popularr-question{
+    border: 1px solid;
+    padding-right: 15em;
+    padding-top: 2em;
+    margin-top: 10em; 
+    margin-right: 1.8em;
+    height: 18em;
+    box-shadow: 5px 10px 8px #888888;
+}

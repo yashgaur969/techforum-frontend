@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Route, Link, BrowserRouter as Router, Switch, BrowserRouter } from 'react-router-dom'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import { SignUp } from './components/SignUp';
 import { LogIn } from './components/LogIn';
 import Dashboard from './components/Dashboard';
@@ -16,7 +16,7 @@ import { Initial } from './components/Initial';
 function App() {
   return (
     <BrowserRouter>
-     <switch>
+     <Switch>
        <Route exact={true} path="/signup" component={SignUp} />
        <Route exact={true} path="/login" component={LogIn} />
        <Route exact={true} path="/dashboard" component={Dashboard} />
@@ -26,7 +26,7 @@ function App() {
        <Route exact={true} path="/userinfo" component={UserInfo} />
        <Route exact={true} path="/userpost" component={UserPost} />
        <Route exact={true} path="/" component={Initial} />
-     </switch>
+     </Switch>
      </BrowserRouter>
   );
 }
