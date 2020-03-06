@@ -1,11 +1,11 @@
 import * as React from 'react'
-import {render} from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import { SignUp } from '../SignUp';
 
 
 describe('testing our signup component', () => {
-    test('if component renders without crashing ',() =>{
+    test('if component renders without crashing ', () => {
         const { getByPlaceholderText } = render(<BrowserRouter><SignUp /></BrowserRouter>)
 
         const first_name = getByPlaceholderText('first-name')
