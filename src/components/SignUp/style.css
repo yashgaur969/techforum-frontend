@@ -21,4 +21,16 @@
     cursor: pointer;
   }
 
+  .signup-box{
+    border: 1px solid;
+    padding-top: 8em;
+    padding-left: 5em;
+    margin-right: 1em;
+    width: 20em;
+    height: 27em;
+    padding-right: 2em;
+    box-shadow: 5px 10px 8px #888888;
+  }
+  
+
 

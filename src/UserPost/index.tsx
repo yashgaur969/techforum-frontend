@@ -28,6 +28,7 @@ export default class UserPost extends React.Component{
         return (
             
             <div className="dashboardd-class">
+                 <div className="simple-text"><p>Recently Asked</p></div>
                 <div className="onee-card">
                 <div className="listt-class">
              {this.state.currData.map((s: any) => <div className="single-card"><strong>{s.first_name}</strong><br></br><h1><strong>{s.question}</strong></h1><br></br>{s.answer}</div>)}

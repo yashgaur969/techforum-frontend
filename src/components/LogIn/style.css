@@ -2,9 +2,9 @@
     display: inline-block;
 }
 .container{
-    /* padding: 400px; */
+    padding: 10em;
     padding-left: 40em;
-    padding-top: 20em;
+    /* padding-top: 20em; */
 }
 input{
     padding: 10px;
@@ -22,3 +22,16 @@ input{
     margin: 4px 2px;
     cursor: pointer;
   }
+
+    .outer-box{
+        border: 1px solid;
+        padding-top: 8em;
+        padding-left: 5em;
+        margin-right: 1em;
+        width: 20em;
+        height: 20em;
+        padding-right: 2em;
+        box-shadow: 5px 10px 8px #888888;
+      }
+
+  

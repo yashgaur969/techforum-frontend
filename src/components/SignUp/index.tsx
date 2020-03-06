@@ -79,18 +79,18 @@ const postdata = (event: any)=>{
        <form onSubmit={postdata} >
            <div> <h1><strong>Stark Industries</strong></h1></div>
            <div className="signup-container">
-           <h1><strong>Sign Up Page</strong></h1>
-               <div><input type="text" placeholder="first-name" value={firstname} onChange={onFirstNameChange} name="firstname" id="first" /><br></br></div>
-               <div><input type="text" placeholder="last-name" value={lastname} onChange={onLastNameChange} name="lastname" id="second" /><br></br></div>
-               <div><input type="text" placeholder="EmailId" value={emailId} onChange={onEmailIdChange} name="email" id="email" /><br></br></div>
-               <div><input type="password" placeholder="password" value={password} onChange={onPasswordChange} name="password" id="pass" /><br></br></div>
-               <div><input type="text" placeholder="designation" value={position} onChange={onPositionChange} name="position"/><br></br></div>
-               <div><input type="text" placeholder="dob" value={dob} onChange={onDobChange} name="dob"  /><br></br></div>
-               <div><input type="text" placeholder="mobile" value={mobile} onChange={onMobileChange} name="mobile"  /><br></br></div>
-               <div><button type="submit" className="button-class" value="next"><Link to="/login">SignUp</Link></button></div>
+               <div className="signup-box">
+               <div className="text-area"><input type="text" placeholder="first-name" value={firstname} onChange={onFirstNameChange} name="firstname" id="first" /><br></br></div>
+               <div className="text-area"><input type="text" placeholder="last-name" value={lastname} onChange={onLastNameChange} name="lastname" id="second" /><br></br></div>
+               <div className="text-area"><input type="text" placeholder="EmailId" value={emailId} onChange={onEmailIdChange} name="email" id="email" /><br></br></div>
+               <div className="text-area"><input type="password" placeholder="password" value={password} onChange={onPasswordChange} name="password" id="pass" /><br></br></div>
+               <div className="text-area"><input type="text" placeholder="designation" value={position} onChange={onPositionChange} name="position"/><br></br></div>
+               <div className="text-area"><input type="text" placeholder="dob" value={dob} onChange={onDobChange} name="dob"  /><br></br></div>
+               <div className="text-area"><input type="text" placeholder="mobile" value={mobile} onChange={onMobileChange} name="mobile"  /><br></br></div>
+               <div className="text-area"><button type="submit" className="button-class" value="next"><Link to="/login">SignUp</Link></button></div>
                <div className="login-redirect">
                    <p>Already have an account ? <Link to="/login">Login</Link></p>
-               </div>
+               </div></div>
            </div>
        </form>
        
