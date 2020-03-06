@@ -2,9 +2,6 @@ import * as React from 'react';
 import './style.css';
 import axios from 'axios';
 
-import { Link } from 'react-router-dom';
-
-
 export default class UserInfo extends React.Component{
     
     state = {

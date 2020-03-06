@@ -15,6 +15,10 @@ export const LogIn: React.FC = () => {
     const onPasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPassword(event.target.value);
     };
+    const onNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setName(event.target.value);
+    };
+
 
     const getdata = (event: any)=>{
         event.preventDefault();

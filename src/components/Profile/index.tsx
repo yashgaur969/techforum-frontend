@@ -1,11 +1,9 @@
 import * as React from 'react';
 import './style.css';
 
-import { Link } from 'react-router-dom';
 import { Header } from '../Header';
 import { Navigator } from '../Navigator';
 import UserInfo from '../UserInfo';
-import Dashboard from '../Dashboard';
 import UserPost from '../../UserPost';
 
 

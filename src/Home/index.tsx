@@ -1,6 +1,5 @@
 import * as React from 'react';
 import './style.css';
-import { Link } from 'react-router-dom';
 import { Navigator } from '../components/Navigator';
 import Dashboard from '../components/Dashboard';
 import { Header } from '../components/Header';
