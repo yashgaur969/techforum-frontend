@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Dashboard from '../Dashboard';
 import Popular from '../Popular';
 
-export const Initial: React.FC= () => {
+export const Initial: React.FC = () => {
     return (
         <div className="initial-container">
             <div className="initial-header">

@@ -2,8 +2,8 @@ import * as React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 
-export const Navigator: React.FC = () =>{
-    
+export const Navigator: React.FC = () => {
+
     return (
         <div className="navigation-class">
             <Link to="/Home">Home</Link><br></br>

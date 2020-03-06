@@ -16,18 +16,18 @@ import { Initial } from './components/Initial';
 function App() {
   return (
     <BrowserRouter>
-     <Switch>
-       <Route exact={true} path="/signup" component={SignUp} />
-       <Route exact={true} path="/login" component={LogIn} />
-       <Route exact={true} path="/dashboard" component={Dashboard} />
-       <Route exact={true} path="/home" component={Home} />
-       <Route exact={true} path="/notifications" component={Notifications} />
-       <Route exact={true} path="/profile" component={Profile} />
-       <Route exact={true} path="/userinfo" component={UserInfo} />
-       <Route exact={true} path="/userpost" component={UserPost} />
-       <Route exact={true} path="/" component={Initial} />
-     </Switch>
-     </BrowserRouter>
+      <Switch>
+        <Route exact={true} path="/signup" component={SignUp} />
+        <Route exact={true} path="/login" component={LogIn} />
+        <Route exact={true} path="/dashboard" component={Dashboard} />
+        <Route exact={true} path="/home" component={Home} />
+        <Route exact={true} path="/notifications" component={Notifications} />
+        <Route exact={true} path="/profile" component={Profile} />
+        <Route exact={true} path="/userinfo" component={UserInfo} />
+        <Route exact={true} path="/userpost" component={UserPost} />
+        <Route exact={true} path="/" component={Initial} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

@@ -7,7 +7,7 @@ import UserInfo from '../UserInfo';
 import UserPost from '../../UserPost';
 
 
-export const Profile: React.FC= () => {
+export const Profile: React.FC = () => {
     return (
         <div className="profile-container">
             <div><Header /></div>
